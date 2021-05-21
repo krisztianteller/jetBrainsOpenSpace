@@ -8,26 +8,32 @@
 
 
 .planet-area {
-        display: flex;
-        align-items: flex-end;
-        width: 30%;
-        height: 100vh;
-        position: relative;
-        
-    
+    display: flex;
+    align-items: flex-end;
+    width: 50%;
+    height: 100vh;
+    position: relative;
+
+
+
+}
+.planet{
+    z-index: 0;
 }
 
 .rocket {
     z-index: 1;
     position: relative;
-    left: -25vw;
-    bottom: 25vw;
+    left: -25%;
+    bottom: 10%;
     transform: rotate(25deg);
 
 }
 
 .control-panel{
-    z-index: 1;
+    background-color: gray;
+    background-image: repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(255,255,255,.5) 35px, rgba(255,255,255,.5) 70px);
+    /*border: yellow 2px;
     position: absolute;
     right: 40px;
     bottom: 40px;
@@ -39,17 +45,46 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    align-items: center;*/
 
 }
+.control-panel__inner{
+    border: 1px;
+    z-index: 1;
+    position: absolute;
+    right: 40px;
+    bottom: 40px;
+    height: 40%;
+    width: 40%;
+    padding: 15px;
+    background-color: #504f4f;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border: yellow;
+
+}
+#password{
+    border-radius: 25px;
+    color: yellow;
+    background-color: #504f4f;
+    border: 2px solid #ffff00;
+    text-align: center;
+
+}
+::placeholder{
+    color: yellow;
+}
+
 input[type=range]{
     writing-mode: bt-lr; /* IE */
     -webkit-appearance: slider-vertical;
-    height: 80px;
-    padding: 0 0px;
+
+
 }
 .check-buttons{
-    
+
     width: 80%;
     height: 20%;
     display: flex;
@@ -59,12 +94,26 @@ input[type=range]{
     margin-top: 10px;
     margin-bottom: 10px;
 }
+
+#ok{
+    border-radius: 25px;
+    width: 40px;
+}
+#ok:hover{
+
+    background-color: red;
+}
 .levers{
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
-#password{
-    display: flex;
-}
+
 #launch{
-    display: flex;
+    border-radius: 25px;
+    width: 100px;
+    height: 50px;
+}
+#launch:hover{
+    background-color: red;
 }
