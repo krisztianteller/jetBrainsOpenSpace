@@ -1,11 +1,62 @@
-.space{
-    background-image: url('space.png');
-}
-.planet-area{
-    background-image: url('mars.png');
+.space {
+
+    background-image: url("https://stepik.org/media/attachments/lesson/452681/space.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
-.rocket{
-    width: 300px;
-    height: 400px;
+
+.planet-area {
+        display: flex;
+        align-items: flex-end;
+        width: 30%;
+        height: 100vh;
+        position: relative;
+        
+    
+}
+
+.rocket {
+    z-index: 1;
+    position: relative;
+    left: -25vw;
+    bottom: 25vw;
+    transform: rotate(25deg);
+
+}
+
+.control-panel{
+    z-index: 1;
+    position: absolute;
+    right: 40px;
+    bottom: 40px;
+    height: 40%;
+    width: 40%;
+    padding: 15px;
+    background-color: #262626;
+    border-radius: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+input[type=range]{
+    writing-mode: bt-lr; /* IE */
+    -webkit-appearance: slider-vertical;
+    height: 80px;
+    padding: 0 0px;
+}
+.check-buttons{
+    display: flex;
+}
+.levers{
+    display: flex;
+}
+#password{
+    display: flex;
+}
+#launch{
+    display: flex;
 }
