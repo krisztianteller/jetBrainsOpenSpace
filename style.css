@@ -31,38 +31,37 @@
 }
 
 .control-panel{
-    background-color: gray;
+    display: flex;
+    background-color: blue;
+    overflow: hidden;
     background-image: repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(255,255,255,.5) 35px, rgba(255,255,255,.5) 70px);
-    /*border: yellow 2px;
     position: absolute;
     right: 40px;
     bottom: 40px;
     height: 40%;
     width: 40%;
     padding: 15px;
-    background-color: #504f4f;
     border-radius: 15px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;*/
+    align-items: center;
 
 }
 .control-panel__inner{
-    border: 1px;
-    z-index: 1;
-    position: absolute;
-    right: 40px;
-    bottom: 40px;
-    height: 40%;
-    width: 40%;
+
+    height: 100%;
     padding: 15px;
-    background-color: #504f4f;
+    border-radius: 15px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    border: yellow;
+    border: 2px solid #0e73ee;
+    background-color: #504f4f;
+    width: 95%;
+    height: 90%;
+
 
 }
 #password{

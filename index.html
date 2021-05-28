@@ -4,30 +4,32 @@
     <meta charset="UTF-8">
     <title>Open Space</title>
     <link rel="stylesheet"  href="style.css">
+    <script src="logic.js">
+    </script>
 </head>
 <body>
 <div class="space">
     <div class="control-panel">
      <div class="control-panel__inner">
-        <input type="password" id="password" placeholder="Enter password">
-        <input type="button"  id="ok" value="Ok">
-        <div class="check-buttons">
-            <input type="checkbox">
-            <input type="checkbox">
-            <input type="checkbox">
-            <input type="checkbox">
-            <input type="checkbox">
-            <input type="checkbox">
+        <input type="password" id="pass" placeholder="Enter password">
+        <input type="button"   id="ok" value="Ok" onclick="unlock()">
+        <div class="check-buttons" >
+            <input type="checkbox" disabled>
+            <input type="checkbox" disabled>
+            <input type="checkbox" disabled>
+            <input type="checkbox" disabled>
+            <input type="checkbox" disabled>
+            <input type="checkbox" disabled>
         </div>
         <div class="levers">
-            <input type="range">
-            <input type="range">
-            <input type="range">
-            <input type="range">
-            <input type="range">
-
+            <input type="range" disabled>
+            <input type="range" disabled>
+            <input type="range" disabled>
+            <input type="range" disabled>
+            <input type="range" disabled>
+;
         </div>
-        <input type="button" id="launch" value="Launch">
+        <input type="button" id="launch" value="Launch" disabled>
      </div>
     </div>
     <div class="planet-area">
