@@ -14,19 +14,20 @@
         <input type="password" id="pass" placeholder="Enter password">
         <input type="button"   id="ok" value="Ok" onclick="unlock()">
         <div class="check-buttons" >
-            <input type="checkbox" disabled>
-            <input type="checkbox" disabled>
-            <input type="checkbox" disabled>
-            <input type="checkbox" disabled>
-            <input type="checkbox" disabled>
-            <input type="checkbox" disabled>
-        </div>
-        <div class="levers">
-            <input type="range" disabled>
-            <input type="range" disabled>
-            <input type="range" disabled>
-            <input type="range" disabled>
-            <input type="range" disabled>
+            <div class="check-buttons"  >
+                <input type="checkbox" id="checked1" onchange="after()" disabled>
+                <input type="checkbox" id="checked2" onchange="after()" disabled>
+                <input type="checkbox" id="checked3" onchange="after()" disabled>
+                <input type="checkbox" id="checked4" onchange="after()" disabled>
+                <input type="checkbox" id="checked5" onchange="after()" disabled>
+                <input type="checkbox" id="checked6" onchange="after()" disabled>
+            </div>
+            <div class="levers" >
+                <input type="range" id="range1" value="80" onchange="after()" disabled>
+                <input type="range" id="range2" value="80" onchange="after()" disabled>
+                <input type="range" id="range3" value="80" onchange="after()" disabled>
+                <input type="range" id="range4" value="80" onchange="after()" disabled>
+                <input type="range" id="range5" value="80" onchange="after()" disabled>
 ;
         </div>
         <input type="button" id="launch" value="Launch" disabled>
